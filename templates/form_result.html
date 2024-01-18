@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../static/css/style.css"> 
+  <title>Perhitungan Efisiensi Energi untuk Rumah Pintar</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>Hitung Efisiensi Energi Rumah Anda!</h1>
+      <p>Ambil inisiatif dan selesaikan masalah konsumsi energi yang berlebihan!</p>
+    </div>
+  </header>
+<body>
+    {% block content %}
+    <h2 class="thanks">Terima Kasih Telah Mengisi Formulir!</h2>
+    <p class="thanks">Nama Lengkap Anda: {{ name }}</p>
+    <p class="thanks">Email Anda: {{ email }}</p>
+    <p class="thanks">Alamat Rumah Anda: {{ address }}</p>
+    <p class="thanks">Tanggal yang Anda Pilih untuk Kedatangan Kami: {{ date }}</p>
+    {% endblock %}
+</body>
+</html>
